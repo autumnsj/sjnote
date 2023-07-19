@@ -7,6 +7,7 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/prismjs@1/themes/prism.css">
 </head>
 <body>
   <div id="app"></div>
@@ -14,10 +15,29 @@
     window.$docsify = {
       name: '神迹笔记',
       repo: '',
-	  loadSidebar: true,
+	    loadSidebar: true,
+      auto2top: false,
+      loadNavbar: true,
+      subMaxLevel: 6,
+      mergeNavbar: true,
+      search: {
+          noData: {
+            '/': '没有结果!',
+          },
+          paths: 'auto',
+          placeholder: {
+            '/': '搜索',
+          },
+          pathNamespaces: ['/']
+        }
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-markdown.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-nginx.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-php.min.js"></script>
 </body>
 </html>
