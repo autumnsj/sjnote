@@ -1,3 +1,0 @@
-- [返回上一级 [配置]](逆向/cpp/配置/)
-- [下载安装VS2013、WDK7.6.note.attach](逆向/cpp/配置/下载安装VS2013、WDK7.6.note.attach/)
-  - [windows driver](逆向/cpp/配置/下载安装VS2013、WDK7.6.note.attach/windows%20driver.md)

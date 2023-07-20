@@ -1,5 +1,0 @@
-- [返回上一级 [数据库]](数据库/)
-- [sqlServer](数据库/sqlServer/)
-  - [使用 CROSS APPLY 与 OUTER APPLY 连接查询](数据库/sqlServer/使用%20CROSS%20APPLY%20与%20OUTER%20APPLY%20连接查询.md)
-  - [条件增删改MERGE INTO](数据库/sqlServer/条件增删改MERGE%20INTO.md)
-  - [查字段说明](数据库/sqlServer/查字段说明.md)

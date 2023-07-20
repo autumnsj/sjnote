@@ -1,6 +1,0 @@
-- [返回上一级 [csharp]](语言/csharp/)
-- [EntityFramework](语言/csharp/EntityFramework/)
-  - [code frist](语言/csharp/EntityFramework/code%20frist.md)
-  - [DAL  BASE](语言/csharp/EntityFramework/DAL%20%20BASE.md)
-  - [EF获取非跟踪数据之DBSet](语言/csharp/EntityFramework/EF获取非跟踪数据之DBSet.md)
-  - [update](语言/csharp/EntityFramework/update.md)

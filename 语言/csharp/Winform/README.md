@@ -1,3 +1,0 @@
-- [返回上一级 [csharp]](语言/csharp/)
-- [Winform](语言/csharp/Winform/)
-  - [app](语言/csharp/Winform/app.md)

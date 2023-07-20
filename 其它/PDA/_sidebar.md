@@ -1,4 +1,0 @@
-- [返回上一级 [其它]](其它/)
-- [PDA](其它/PDA/)
-  - [windows PDA连接问题.note.attach](其它/PDA/windows%20PDA连接问题.note.attach/)
-  - [windows PDA连接问题](其它/PDA/windows%20PDA连接问题.md)
