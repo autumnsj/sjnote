@@ -1,3 +1,3 @@
-- [返回上一级 [TP]](cpp/驱动/TP/)
-- [对64位下TP的学习(不用过PG).note.attach](cpp/驱动/TP/对64位下TP的学习(不用过PG).note.attach/)
-  - [Test](cpp/驱动/TP/对64位下TP的学习(不用过PG).note.attach/Test.md)
+- [返回上一级 [TP]](逆向/cpp/驱动/TP/)
+- [对64位下TP的学习(不用过PG).note.attach](逆向/cpp/驱动/TP/对64位下TP的学习(不用过PG).note.attach/)
+  - [Test](逆向/cpp/驱动/TP/对64位下TP的学习(不用过PG).note.attach/Test.md)

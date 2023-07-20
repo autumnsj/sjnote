@@ -1,3 +1,3 @@
-- [返回首页](/)
-- [mysql](mysql/)
-  - [z](mysql/z.md)
+- [返回上一级 [数据库]](数据库/)
+- [mysql](数据库/mysql/)
+  - [z](数据库/mysql/z.md)

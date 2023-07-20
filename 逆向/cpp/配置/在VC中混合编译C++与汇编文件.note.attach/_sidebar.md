@@ -1,3 +1,3 @@
-- [返回上一级 [配置]](cpp/配置/)
-- [在VC中混合编译C++与汇编文件.note.attach](cpp/配置/在VC中混合编译C++与汇编文件.note.attach/)
-  - [C++汇编，混合编译](cpp/配置/在VC中混合编译C++与汇编文件.note.attach/C++汇编，混合编译.md)
+- [返回上一级 [配置]](逆向/cpp/配置/)
+- [在VC中混合编译C++与汇编文件.note.attach](逆向/cpp/配置/在VC中混合编译C++与汇编文件.note.attach/)
+  - [C++汇编，混合编译](逆向/cpp/配置/在VC中混合编译C++与汇编文件.note.attach/C++汇编，混合编译.md)

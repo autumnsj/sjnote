@@ -1,3 +1,3 @@
-- [返回上一级 [other]](other/)
-- [DNF](other/DNF/)
-  - [最低配置要求：CPU：1](other/DNF/最低配置要求：CPU：1.md)
+- [返回上一级 [其它]](其它/)
+- [DNF](其它/DNF/)
+  - [最低配置要求：CPU：1](其它/DNF/最低配置要求：CPU：1.md)
