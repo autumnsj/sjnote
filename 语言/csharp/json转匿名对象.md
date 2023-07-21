@@ -1,24 +1,24 @@
-var rObj = JsonConvert.DeserializeAnonymousType(result, new {\
+var rObj = JsonConvert.DeserializeAnonymousType(result, new {
 
-message = \"\",\
+message = \"\",
 
-nu = \"\",\
+nu = \"\",
 
-ischeck = 0,\
+ischeck = 0,
 
-condition = \"\",\
+condition = \"\",
 
-status = 1,\
+status = 1,
 
-state = 0,\
+state = 0,
 
-comcontact = \"\",\
+comcontact = \"\",
 
-comurl = \"\",\
+comurl = \"\",
 
 data = new\[\] { new { time = DateTime.Now, context = \"\", location =
 
-\"\" } }\
+\"\" } }
 
 });
 

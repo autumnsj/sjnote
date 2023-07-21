@@ -1,6 +1,6 @@
 mysql \>grant all privileges on \*.\* to root@\'%\' identified by
 
-\'Passwd\' ;\
+\'Passwd\' ;
 
 mysql \>flush privileges;
 
