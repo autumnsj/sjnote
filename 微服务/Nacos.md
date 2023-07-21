@@ -6,9 +6,9 @@
 
 从Nacos 2.2.1开始为了系统安全考虑**移除**了以下环境变量的默认值,启动时请自行添加,否则会启动报错.
 
-1. ~~NACOS_AUTH_IDENTITY_KEY~~
-2. ~~NACOS_AUTH_IDENTITY_VALUE~~
-3. ~~NACOS_AUTH_TOKEN~~
+~~NACOS_AUTH_IDENTITY_KEY~~
+~~NACOS_AUTH_IDENTITY_VALUE~~
+~~NACOS_AUTH_TOKEN~~
 
 ## 项目目录
 

@@ -12,7 +12,7 @@
 
 APPLY 与 OUTER APPLY 可以，下面用示例说明。
 
-1. 示例一
+示例一
 
 Ø 有两张表：Student（学生表和 Score（成绩表），数据如下：
 
@@ -32,7 +32,7 @@ INNER JOIN Score AS T2 ON T1.tudentNo = T2.StudentNo
 
 3) 咦，不对，这不是我想要的结果。
 
-2. 再看看 CROSS APPLY
+再看看 CROSS APPLY
 
 1) SQL 代码
 
@@ -58,7 +58,7 @@ ORDER BY T.ExamDate DESC
 
 2) 查询每个学生最近两次的考试成绩,没有参加考试的同学成绩补 null
 
-1. 先试下 LEFT OUTER JOIN
+先试下 LEFT OUTER JOIN
 
 1) SQL 代码
 
@@ -72,7 +72,7 @@ LEFT OUTRJOIN Score AS T2 ON T1.StudentNo = T2.StudentNo
 
 3) 咦，不对，这又不是我想要的结果。
 
-2. 再看看 OUTER APPLY
+再看看 OUTER APPLY
 
 1) SQL 代码
 
@@ -98,7 +98,7 @@ ORDER BY T.ExamDate DESC
 
 Ø 总结
 
-1. 理解 CROSS APPLY 与 OUTER APPLY（个人理解）
+理解 CROSS APPLY 与 OUTER APPLY（个人理解）
 
 
 
@@ -118,7 +118,7 @@ ORDER BY T.ExamDate DESC
 
 JOIN 类似）
 
-2. CROSS APPLY 与 INNER JOIN 的区别
+CROSS APPLY 与 INNER JOIN 的区别
 
 1) CROSS APPLY 可以根据当前左表的当前记录去查询右表，但是 INNER JOIN
 
@@ -128,13 +128,13 @@ JOIN 是根据左表的当前记录匹配右表整个结果集。
 
 2) 两者都是匹配成功才输出。
 
-3. OUTER APPLY 与 LEFT OUTER JOIN 的区别
+OUTER APPLY 与 LEFT OUTER JOIN 的区别
 
 1) 它们和（CROSS APPLY 与 INNER JOIN）类似。
 
 2) 只是两者都是匹配失败也会输出。
 
-4. 使用场景：
+使用场景：
 
 1) 一个商品有多张图片，但是只想取最近的一张图片跟商品匹配。
 
