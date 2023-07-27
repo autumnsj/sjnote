@@ -4,7 +4,7 @@ docker build -t isa:1.0 .
 #运行容器
 docker run -d --name=isa100 -e clientId=100 --restart=always isa:1.0
 #查看容器日志
-docker logs -f isa102| tail -n 100
+docker logs isa102 --tail 100  -f
 #导出镜像
 docker save -o isa1.0.tar isa:1.0
 #加载镜像

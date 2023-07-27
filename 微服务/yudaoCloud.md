@@ -33,5 +33,9 @@ docker swarm join --token <token> <manager-ip>:2377
 docker network create -d overlay one_network
 ```
 
-## 3.安装MySql5.7
+## 3.安装MySql5.7 (ubuntu)
+
+ [mysql5.7安装.md](..\运维\Linux\mysql5.7安装.md)
+
+## 4. Nacos 集群部署
 
