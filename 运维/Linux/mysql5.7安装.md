@@ -16,6 +16,14 @@ sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
 
 **1.3** Next, select **Ubuntu Bionic.**
 
+- 如果不小心选到了别的选项, 执行命令移除,再执行1.2(非必要)
+
+  ```
+  sudo dpkg --purge mysql-apt-config
+  ```
+
+  
+
 ![image-20230724143330571](mysql5.7安装.assets/image-20230724143330571.png)
 
 After that, select the **MySQL Server & Cluster** option. Then, select **mysql-5.7** and finally select **Ok**.
@@ -126,7 +134,9 @@ Even after configuring MySQL to allow remote connections to the root account, yo
 
 Before starting to use MySQL 5.7, you need to secure it first. For this, use the command:
 
-**如果还不能访问看下/etc/mysql/mysql.conf.d  注释掉  bind-address   = 127.0.0.1 **
+**如果还不能访问看下 vim /etc/mysql/mysql.conf.d/mysqld.cnf  注释掉  bind-address   = 127.0.0.1 **
+
+
 
 ![image-20230724154654120](mysql5.7安装.assets/image-20230724154654120.png)
 

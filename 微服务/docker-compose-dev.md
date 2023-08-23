@@ -53,15 +53,15 @@ https://www.runoob.com/docker/windows-docker-install.html
 
 双击下载好的安装包，进行安装
 
-![image-20210116135746609](docker-compose一键集群.assets/1652001-20210116152437913-191326593.png)
+![image-20210116135746609](.assets/docker-compose-dev/1652001-20210116152437913-191326593.png)
 
 等待安装
 
-![image-20210116135838275](docker-compose一键集群.assets/1652001-20210116152437566-542144978.png)
+![image-20210116135838275](.assets/docker-compose-dev/1652001-20210116152437566-542144978.png)
 
 安装完成后，双击桌面的图标运行
 
-![image-20210116141540829](docker-compose一键集群.assets/1652001-20210116152437297-1408133461.png)
+![image-20210116141540829](.assets/docker-compose-dev/1652001-20210116152437297-1408133461.png)
 
 #### 1.2 WSL 2 installation is incomplete 的问题
 
@@ -69,13 +69,13 @@ https://www.runoob.com/docker/windows-docker-install.html
 
 > WSL 2 installation is incomplete.
 
-![image-20210116141615513](docker-compose一键集群.assets/1652001-20210116152436989-2053878654.png)
+![image-20210116141615513](.assets/docker-compose-dev/1652001-20210116152436989-2053878654.png)
 
 查看小鲸鱼的状态
 
 如果红色就说明守护进程没有启动
 
-![image-20210116143315453](docker-compose一键集群.assets/1652001-20210116152436763-1206755848.png)
+![image-20210116143315453](.assets/docker-compose-dev/1652001-20210116152436763-1206755848.png)
 
 可能是我们使用的wsl2版本老了,需要我们自己手动更新一下
 
@@ -89,17 +89,17 @@ https://www.runoob.com/docker/windows-docker-install.html
 
 找到第四步，点击下载
 
-![image-20210116144707376](docker-compose一键集群.assets/1652001-20210116152436489-1255115822.png)
+![image-20210116144707376](.assets/docker-compose-dev/1652001-20210116152436489-1255115822.png)
 
 下载完后，开始安装更新，安装完了
 
 右击重新启动一下
 
-![image-20210116143408336](docker-compose一键集群.assets/1652001-20210116152436213-1197416715.png)
+![image-20210116143408336](.assets/docker-compose-dev/1652001-20210116152436213-1197416715.png)
 
 此时小鲸鱼
 
-![image-20210116145108629](docker-compose一键集群.assets/1652001-20210116152435953-1078208900.png)
+![image-20210116145108629](.assets/docker-compose-dev/1652001-20210116152435953-1078208900.png)
 
 说明正常了
 
@@ -115,7 +115,7 @@ docker version
 
 如图表示成功
 
-![image-20210116142723575](docker-compose一键集群.assets/1652001-20210116152435746-492552034.png)
+![image-20210116142723575](.assets/docker-compose-dev/1652001-20210116152435746-492552034.png)
 
 按下 `win + R`输入`CMD` 输入
 
@@ -123,7 +123,7 @@ docker version
 docker run hello-world
 ```
 
-![image-20210116145508113](docker-compose一键集群.assets/1652001-20210116152435481-1843419438.png)
+![image-20210116145508113](.assets/docker-compose-dev/1652001-20210116152435481-1843419438.png)
 
 你运行这个你会发现很慢，这就需要配置镜像
 
@@ -140,7 +140,7 @@ docker run hello-world
 
 找到设置，设置地址,等待重启完毕
 
-![image-20210116150357047](docker-compose一键集群.assets/1652001-20210116152435174-663923720.png)
+![image-20210116150357047](.assets/docker-compose-dev/1652001-20210116152435174-663923720.png)
 
 按下 `win + R`输入`CMD` 输入
 
@@ -150,13 +150,13 @@ docker info
 
 查看是否设置成功，如图表示设置成功
 
-![image-20210116150622106](docker-compose一键集群.assets/1652001-20210116152434502-1229735361.png)
+![image-20210116150622106](.assets/docker-compose-dev/1652001-20210116152434502-1229735361.png)
 
 ####  2.2 配置docker可用内存(必须配置, 不内存不够无法启动)
 
 - 如图,安须配置, 最少2核8G内存, 存储路径不想放在C盘可以换到其它盘
 
-  ![image-20230727101829614](docker-compose一键集群.assets/image-20230727101829614.png)
+  ![image-20230727101829614](.assets/docker-compose-dev/image-20230727101829614.png)
 
 
 
@@ -182,7 +182,7 @@ docker info
 docker-compose
 ```
 
-![image-20210116152203123](docker-compose一键集群.assets/1652001-20210116152434042-2091183788.png)
+![image-20210116152203123](.assets/docker-compose-dev/1652001-20210116152434042-2091183788.png)
 
 ## 二. 安装微服务中间件集群
 
@@ -192,7 +192,13 @@ docker-compose
 git clone https://gitee.com/autumnzsd/ProjectTemplate.git
 ```
 
-#### 4.2使用docker-compose运行
+#### 4.1 配置本机IP
+
+- 找到修改.env环境变量文件 LOCAL_IP 改成本机IP,(不能是127.0.01和localhost) , 会影响到中间件注册到nacos的服务IP, 不改有些中间件会无法使用.
+
+![image-20230814111417383](.assets/docker-compose-dev/image-20230814111417383.png)
+
+#### 4.3使用docker-compose运行
 
 - 进入目录 ProjectTemplate/Microservices/all/dev
 
@@ -200,17 +206,17 @@ git clone https://gitee.com/autumnzsd/ProjectTemplate.git
 
    说明一下, 运行前应确保6379 (redis)与 3306(mysql)端口没有被占用
 
-  ![image-20230727104102695](docker-compose一键集群.assets/image-20230727104102695.png)
+  ![image-20230727104102695](.assets/docker-compose-dev/image-20230727104102695.png)
 
 - 测试下访问 nacos 地址是: [localhost:8848/nacos](localhost:8848/nacos)
 
   如图,即启动成功
 
-  ![image-20230727104422068](docker-compose一键集群.assets/image-20230727104422068.png)
+  ![image-20230727104422068](.assets/docker-compose-dev/image-20230727104422068.png)
 
 - 需要停止的话则运行stop.bat 即可
 
-  ![image-20230727104551388](docker-compose一键集群.assets/image-20230727104551388.png)
+  ![image-20230727104551388](.assets/docker-compose-dev/image-20230727104551388.png)
 
 ## 三. 默认端口和服务说明
 

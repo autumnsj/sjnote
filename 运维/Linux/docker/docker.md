@@ -1,3 +1,23 @@
+## 一 .docker安装
+
+```bash
+ apt install docker.io
+ docker --version
+```
+
+
+
+## 二. docker-compose安装
+
+``` bash
+ apt install docker-compose
+ docker-compose --version
+```
+
+
+
+## 三. 常用命令
+
 ```bash
 # 构建镜像
 docker build -t isa:1.0 .
@@ -16,7 +36,8 @@ docker exec -i -t  isa100 /bin/bash
 ```
 
 
-### 批量运行容器的shell 
+
+### 四. 批量运行容器的shell 
 
 ```bash
 #!/bin/bash
