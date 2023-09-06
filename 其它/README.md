@@ -6,6 +6,7 @@
     - [github](其它/github/github.md)
   - [PDA](其它/PDA/)
     - [windows PDA连接问题](其它/PDA/windows%20PDA连接问题.md)
+  - [typora](其它/typora.md)
   - [VM安装macOS](其它/VM安装macOS.md)
   - [二叉树的应用详解 - 数据结构 ](其它/二叉树的应用详解%20-%20数据结构%20.md)
   - [关于PG](其它/关于PG.md)

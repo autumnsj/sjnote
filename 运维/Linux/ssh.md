@@ -179,11 +179,11 @@ PasswordAuthentication no
 
 最后，重启 SSH 服务：
 
-```
-[root@host .ssh]$ service sshd restart
+```bash
+systemctl restart sshd
 ```
 
-### 4. 将私钥下载到客户端，然后转换为 PuTTY 能使用的格式
+### 4. 将私钥然转换为 PuTTY 能使用的格式
 
 然后打开 PuTTYGen，单击 Actions 中的 Load 按钮，载入你的私钥文件。如果你刚才设置了密钥锁码，这时则需要输入。
 

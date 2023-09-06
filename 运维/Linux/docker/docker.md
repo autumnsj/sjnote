@@ -1,20 +1,83 @@
 ## 一 .docker安装
 
+- 错误示范, 这样安装版本太低(不推荐)
+
 ```bash
  apt install docker.io
  docker --version
 ```
 
+### [Install using the apt repository](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository) 
+
+Before you install Docker Engine for the first time on a new host machine, you need to set up the Docker repository. Afterward, you can install and update Docker from the repository.
 
 
-## 二. docker-compose安装
 
-``` bash
- apt install docker-compose
- docker-compose --version
+#### [Set up the repository](https://docs.docker.com/engine/install/ubuntu/#set-up-the-repository) 
+
+1. Update the `apt` package index and install packages to allow `apt` to use a repository over HTTPS:
+
+   ```bash
+   sudo apt-get update
+   sudo apt-get install ca-certificates curl gnupg
+   ```
+
+2. Add Docker's official GPG key:
+
+   ```bash
+   sudo install -m 0755 -d /etc/apt/keyrings
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   sudo chmod a+r /etc/apt/keyrings/docker.gpg
+   ```
+
+3. Use the following command to set up the repository:
+
+   ```bash
+   echo \
+     "deb [arch="$(dpkg --print-architecture)" signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+     "$(. /etc/os-release && echo "$VERSION_CODENAME")" stable" | \
+     sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   ```
+
+   > **Note**
+   >
+   > If you use an Ubuntu derivative distro, such as Linux Mint, you may need to use `UBUNTU_CODENAME` instead of `VERSION_CODENAME`.
+
+4. Update the `apt` package index:
+
+   ```bash
+   sudo apt-get update
+   ```
+
+
+
+#### [Install Docker Engine](https://docs.docker.com/engine/install/ubuntu/#install-docker-engine) 
+
+1. Install Docker Engine, containerd, and Docker Compose.
+
+Latest Specific version
+
+------
+
+To install the latest version, run:
+
+content_copy
+
+```bash
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
+------
 
+1. Verify that the Docker Engine installation is successful by running the `hello-world` image.
+
+   ```bash
+   sudo docker run hello-world
+   ```
+
+## 二. docker-compose 
+
+- 其实上面的docker安装已经带上了compose, 但使用命令不是docker-compose了 而是 docker compose
 
 ## 三. 常用命令
 

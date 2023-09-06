@@ -5,7 +5,7 @@
 - 运行配置添加 **VM Options**
 
 ```shell
--javaagent:c:/skywalking/skywalking-agent.jar -Dskywalking.agent.service_name=GateWayServer -Dskywalking.agent.instance_name=dev
+-javaagent:c:/skywalking/skywalking-agent.jar -Dskywalking.agent.service_name=GateWayServer -Dskywalking.agent.instance_name=dev -Dskywalking.collector.backend_service=skywalking-oap
 ```
 
 - 如图所示
