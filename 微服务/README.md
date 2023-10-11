@@ -4,6 +4,7 @@
     - [新建服务](微服务/yudaoCloud/新建服务.md)
   - [docker-compose-dev](微服务/docker-compose-dev.md)
   - [docker-compose-prod](微服务/docker-compose-prod.md)
+  - [minio](微服务/minio.md)
   - [Nacos](微服务/Nacos.md)
   - [skywalking](微服务/skywalking.md)
   - [yudaoCloud](微服务/yudaoCloud.md)

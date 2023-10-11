@@ -9,7 +9,7 @@ docker run --name minio -p 9000:9000 -p 9090:9090 -d --restart=always -e "MINIO_
 
 ```
 ``` shell
-#docker options
+#docker options 目录映射
 -v C:\minio\data:/data -v C:\minio\config:/root/
 ```
 

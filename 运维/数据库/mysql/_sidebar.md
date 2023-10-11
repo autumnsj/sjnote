@@ -1,4 +1,4 @@
-- [返回上一级 [数据库]](数据库/)
-- [mysql](数据库/mysql/)
-  - [mysql备份还原](数据库/mysql/mysql备份还原.md)
-  - [mysql常用](数据库/mysql/mysql常用.md)
+- [返回上一级 [数据库]](运维/数据库/)
+- [mysql](运维/数据库/mysql/)
+  - [mysql备份还原](运维/数据库/mysql/mysql备份还原.md)
+  - [mysql常用](运维/数据库/mysql/mysql常用.md)
