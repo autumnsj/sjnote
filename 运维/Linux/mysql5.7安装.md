@@ -134,11 +134,26 @@ Even after configuring MySQL to allow remote connections to the root account, yo
 
 Before starting to use MySQL 5.7, you need to secure it first. For this, use the command:
 
-**如果还不能访问看下 vim /etc/mysql/mysql.conf.d/mysqld.cnf  注释掉  bind-address   = 127.0.0.1 **
+- 修改IP绑定, 默认只允许本机访问
+
+**vim /etc/mysql/mysql.conf.d/mysqld.cnf  注释掉  bind-address   = 127.0.0.1 ** 
 
 
 
 ![image-20230724154654120](mysql5.7安装.assets/image-20230724154654120.png)
+
+- 添加最大连接数
+
+```bash
+vim  /etc/mysql/mysql.conf.d/mysqld.cnf
+# bind-address   = 127.0.0.1
+#添加
+max_connections=500
+```
+
+
+
+ 
 
 ### 3 – Check the MySQL version(可选)
 

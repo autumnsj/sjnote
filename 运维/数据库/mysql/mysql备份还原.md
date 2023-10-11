@@ -1,3 +1,17 @@
+- 普通备份还原
+
+```bash
+#备份
+/usr/bin/mysqldump -h localhost -P3306 -uroot -p<密码> <数据库名> > <保存文件路径>
+#还原
+```
+
+
+
+
+
+
+
 - 使用**binlog**进行数据恢复
 
 ``` shell
