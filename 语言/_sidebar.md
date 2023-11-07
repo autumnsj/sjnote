@@ -67,3 +67,5 @@
     - [正则表达式](语言/csharp/正则表达式.md)
     - [热键应用](语言/csharp/热键应用.md)
     - [非主线程操作控件](语言/csharp/非主线程操作控件.md)
+  - [python](语言/python/)
+    - [Python常用](语言/python/Python常用.md)

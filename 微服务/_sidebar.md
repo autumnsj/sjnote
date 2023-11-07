@@ -6,5 +6,6 @@
   - [docker-compose-prod](微服务/docker-compose-prod.md)
   - [minio](微服务/minio.md)
   - [Nacos](微服务/Nacos.md)
+  - [redis](微服务/redis.md)
   - [skywalking](微服务/skywalking.md)
   - [yudaoCloud](微服务/yudaoCloud.md)

@@ -1,13 +1,30 @@
-```
-let g:mapleader = ' '
+![image-20231031163934620](.assets/ideaVim/image-20231031163934620.png)
 
+## 常用操作
+
+``` vim
+ysw"      给单词添加""号,从当前光标开始的单词
+ysiw"     给单词添加""号,当前光标所在单词
+ds"       去掉""号
+
+```
+
+
+
+# 配置
+
+```
+let g:mapleader = '\'
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,cp936et encoding=utf-8
 " 中英文输入法自动切换
 "set keep-english-in-normal
 
-" surround插件
-set surround
 " easymotion
 set easymotion
+" surround插件
+set surround
+set argtextobj
 
 let g:EasyMotion_do_mapping = 0
 nmap s <Plug>(easymotion-s)
@@ -34,7 +51,6 @@ set smartcase
 set nu
 " 相对行号
 set rnu
-
 " 滚动时保持上下边距
 set scrolloff=5
 " 该设置可以将光标定位到窗口中间位置
@@ -46,7 +62,6 @@ set scrolloff=5
 " 取消高亮
 nmap <ESC> :noh<CR>
 nmap <C-[> :noh<CR>
-
 " 快捷方式
 nmap <A-q> :q<CR>
 
@@ -62,6 +77,10 @@ imap <C-h> <Left>
 imap <C-j> <Down>
 imap <C-k> <Up>
 imap <C-l> <Right>
+map <A-h> 0
+map <A-l> $
+map <A-j> G
+map <A-k> gg
 " 系统剪板
 set clipboard^=unnamed,unnamedplus
 " x模式黏贴后重新复制被黏贴内容
@@ -81,6 +100,7 @@ nmap <c-o> <action>(back)
 nmap <c-i> <action>(forward)
 " nmap u <action>($undo)
 " nmap <c-r> <action>($redo)
+nmap <leader><leader> <action>(FindinFiles)
 " 文件查找
 nmap <leader>ff <action>(gotofile)
 " 全局模糊搜索
@@ -110,11 +130,10 @@ xmap <leader>ca <action>(showintentionactions)
 " 新建类
 nmap <leader>nc <action>(newclass)
 " 打开终端
-nmap `` <Action>(ActivateTerminalToolWindow)
-" 翻译
-xmap <leader>t <Action>($EditorTranslateAction)<Esc>
-nmap <leader>T <Action>($ShowTranslationDialogAction)
-nmap <leader>t viw<Action>($EditorTranslateAction)
+nmap <leader>t <Action>(ActivateTerminalToolWindow)
+"xmap <leader>t <Action>($EditorTranslateAction)<Esc>
+"nmap <leader>T <Action>($ShowTranslationDialogAction)
+"nmap <leader>t viw<Action>($EditorTranslateAction)
 " 格式化
 nmap <leader>fm <Action>(ReformatCode)
 " 重命名

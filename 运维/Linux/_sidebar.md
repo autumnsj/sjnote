@@ -11,6 +11,7 @@
   - [chkconfig](运维/Linux/chkconfig.md)
   - [dns](运维/Linux/dns.md)
   - [mysql5.7安装](运维/Linux/mysql5.7安装.md)
+  - [nginx](运维/Linux/nginx.md)
   - [php8.1](运维/Linux/php8.1.md)
   - [ssh](运维/Linux/ssh.md)
   - [ssl证书](运维/Linux/ssl证书.md)
@@ -19,3 +20,4 @@
   - [常用命令](运维/Linux/常用命令.md)
   - [常用配置](运维/Linux/常用配置.md)
   - [节点搭建](运维/Linux/节点搭建.md)
+  - [部署jar包](运维/Linux/部署jar包.md)

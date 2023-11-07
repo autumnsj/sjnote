@@ -1,4 +1,6 @@
-## 一 .docker安装
+# 
+
+## 一 .ubuntu 20 + docker安装
 
 - 错误示范, 这样安装版本太低(不推荐)
 
@@ -26,7 +28,7 @@ Before you install Docker Engine for the first time on a new host machine, you n
 
    ```bash
    sudo install -m 0755 -d /etc/apt/keyrings
-   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+   curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpgn --dearmor -o /etc/apt/keyrings/docker.gpg
    sudo chmod a+r /etc/apt/keyrings/docker.gpg
    ```
 
@@ -143,3 +145,42 @@ fi
 
 
 ```
+
+## 四. Ubuntu18.04安装Docker完整教程
+
+1.更新软件源列表
+
+`sudo apt update`
+2.安装软件包依赖
+
+`sudo apt install apt-transport-https ca-certificates curl software-properties-common`
+3.在系统中添加Docker的官方密钥
+
+`curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
+4.添加Docker源,选择stable长期稳定版
+
+`sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"`
+5.再次更新源列表
+
+`sudo apt update`
+6.查看可以安装的Docker版本
+
+`sudo apt-cache policy docker-ce`
+7.开始安装Docker（ce表示社区版）
+
+`sudo apt install docker-ce`
+8.查看是否成功安装Docker，出现下图，说明安装成功
+
+docker
+9.查看安装的Docker版本
+
+`docker -v`
+10.启动Docker服务
+
+` sudo systemctl start docker`   //wsl 不好使换成service
+11.设置开机自启动docker
+
+`sudo systemctl enable docker`
+12.查看Docker是否开启，出现绿色圆点表示服务正常开启
+
+`sudo systemctl status docker`

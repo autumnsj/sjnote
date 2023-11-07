@@ -1,4 +1,4 @@
-## node.sj版本切换
+## node.js版本切换
 
 - 下载安装  https://GitHub.com/coreybutler/nvm-windows
 
