@@ -14,10 +14,9 @@ apt install nginx
 server {
    listen 80;
    server_name wl123.shipro.ltd;
-   client_max_body_size 1000m;
+   client_max_body_size 1024m;
    charset utf-8;
    underscores_in_headers on;
-   ssl_prefer_server_ciphers on;
    location / {
        root   /home/project/wl123/web;
        try_files $uri $uri/ /index.html;
@@ -40,7 +39,7 @@ server {
 
 ```
 
-
+## 3.配置
 
 
 
