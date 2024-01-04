@@ -10,6 +10,10 @@ netsh interface portproxy delete v4tov4 30003
 
 - 查看端口站用
 
+- ```
+  netstat -ano | findstr "8080"
+  ```
+
 - 端口异常提示占用,但实际没占用
 
   ``` powershell

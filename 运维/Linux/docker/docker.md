@@ -184,3 +184,6 @@ docker
 12.查看Docker是否开启，出现绿色圆点表示服务正常开启
 
 `sudo systemctl status docker`
+
+
+

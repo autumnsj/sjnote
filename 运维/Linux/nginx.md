@@ -8,7 +8,7 @@
 apt install nginx
 ```
 
-## 2.配置
+## 2.配置 (这里不配置ssl, 因为后面可以用命令自动添加配置并获取证书)
 
 ```nginx
 server {
@@ -38,6 +38,24 @@ server {
 }
 
 ```
+
+- 附根域名跳转到www配置如下
+
+  ```nginx
+  server {
+      server_name test.com;
+      charset utf-8;
+      if ($host = test.com) {
+          return 301 https://www.$host$request_uri;
+  
+      } 
+      listen 80;
+  }
+  
+  
+  ```
+
+  
 
 ## 3.配置
 
